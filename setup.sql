@@ -3,8 +3,8 @@
     USE ROLE accountadmin;
 
     -- Enable Snowflake Intelligence by creating the Config DB & Schema
-    -- CREATE DATABASE IF NOT EXISTS snowflake_intelligence;
-    -- CREATE SCHEMA IF NOT EXISTS snowflake_intelligence.agents;
+    CREATE DATABASE IF NOT EXISTS snowflake_intelligence;
+    CREATE SCHEMA IF NOT EXISTS snowflake_intelligence.agents;
     
     -- Allow anyone to see the agents in this schema
     GRANT USAGE ON DATABASE snowflake_intelligence TO ROLE PUBLIC;
